@@ -1,4 +1,4 @@
-#include"Personaje.h"
+#include "Personaje.h"
 
  Personaje::Personaje(){
     texture.loadFromFile("avion_galaga.png");
@@ -35,6 +35,7 @@
         }
         disp.update();
  }
+
 void Personaje::Shoot(){
     if(disp.IsActive()==false){
         float x=sprite.getPosition().x+sprite.getGlobalBounds().width/2;
@@ -43,7 +44,13 @@ void Personaje::Shoot(){
         disp.setActive(true);
     }
 }
- void Personaje::draw(sf::RenderTarget& target, sf::RenderStates states)const{
+
+void Personaje::draw(sf::RenderTarget& target, sf::RenderStates states)const{
  target.draw(sprite, states);
  target.draw(disp, states);
- }
+}
+
+sf::FloatRect Personaje::getBounds() const{
+    return sprite.getGlobalBounds();
+}
+

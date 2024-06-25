@@ -1,8 +1,12 @@
 #include <SFML/Graphics.hpp>
-#include"Personaje.h"
-#include"Enemigo.h"
-#include<cstdlib>
-#include<ctime>
+#include "Gameplay.h"
+
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
 int main()
 {
     std::srand(std::time(nullptr));
@@ -10,8 +14,8 @@ int main()
     sf::RenderWindow window(sf::VideoMode(900, 800), "Prueba de juego");
     window.setFramerateLimit(60);
 
-    Personaje Galaga;
-    Enemigo DeathStar;
+    Escena Gameplay;
+
     ///Game Loop (update del juego)
     while (window.isOpen()){
 
@@ -24,15 +28,12 @@ int main()
                 window.close();
         }
         ///CMD - Joy
-        Galaga.update();
-        DeathStar.update();
 
         ///Update - actualiza los estados del juego
+        Gameplay.update();
         window.clear();
         ///Draw (Dibuja)
-        window.draw(Galaga);
-
-        window.draw(DeathStar);
+        window.draw(Gameplay);
 
         ///Display - Flip
         window.display();

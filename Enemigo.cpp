@@ -1,5 +1,5 @@
-#include"Enemigo.h"
-#include<ctime>
+#include "Enemigo.h"
+#include <ctime>
 
  Enemigo::Enemigo(){
     texture.loadFromFile("enemigo_galaga.png");
@@ -20,14 +20,21 @@
     }
     disp.updateEnemigo();
  }
+
 void Enemigo::Shoot(){
     if(disp.IsActive()==false){
         disp.setPosition(sprite.getPosition().x+sprite.getGlobalBounds().width/2, sprite.getPosition().y+sprite.getGlobalBounds().height);
         disp.setActive(true);
     }
 }
+
  void Enemigo::draw(sf::RenderTarget& target, sf::RenderStates states)const{
  target.draw(sprite, states);
  target.draw(disp, states);
- }
+}
+
+sf::FloatRect Enemigo::getBounds() const{
+    return sprite.getGlobalBounds();
+}
+
 

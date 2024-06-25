@@ -36,7 +36,11 @@ active=true;
 }
 
 void Disparo::draw(sf::RenderTarget& target, sf::RenderStates states)const{
- if(active==true){
- target.draw(sprite, states);
- }
+    if(active==true){
+    target.draw(sprite, states);
+    }
+}
+
+sf::FloatRect Disparo::getBounds() const{
+    return sprite.getGlobalBounds();
 }

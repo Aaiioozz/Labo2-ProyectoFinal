@@ -38,10 +38,14 @@
 			<Add library="SFML/lib/libsfml-system.a" />
 			<Add directory="SFML/lib" />
 		</Linker>
+		<Unit filename="Colision.cpp" />
+		<Unit filename="Colision.h" />
 		<Unit filename="Disparo.cpp" />
 		<Unit filename="Disparo.h" />
 		<Unit filename="Enemigo.cpp" />
 		<Unit filename="Enemigo.h" />
+		<Unit filename="Gameplay.cpp" />
+		<Unit filename="Gameplay.h" />
 		<Unit filename="Personaje.cpp" />
 		<Unit filename="Personaje.h" />
 		<Unit filename="main.cpp" />
