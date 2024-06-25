@@ -3,6 +3,7 @@
  Personaje::Personaje(){
     texture.loadFromFile("avion_galaga.png");
     sprite.setTexture(texture);
+    sprite.setPosition(350, 600);
  }
  void Personaje::update(){
          if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){

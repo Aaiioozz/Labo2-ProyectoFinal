@@ -22,7 +22,7 @@ int main()
         }
         ///CMD - Joy
         Galaga.update();
-        //DeathStar.update();
+        DeathStar.update();
 
         ///Update - actualiza los estados del juego
         window.clear();

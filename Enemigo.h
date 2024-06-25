@@ -4,10 +4,10 @@
 class Enemigo: public sf::Drawable{
 sf::Sprite sprite;
 sf::Texture texture;
-float velocity=3;
+float velocity=5.0f;
 public:
     Enemigo();
-    //void update();
+    void update();
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 };
 
