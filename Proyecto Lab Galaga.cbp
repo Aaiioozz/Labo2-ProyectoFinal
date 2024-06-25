@@ -38,6 +38,8 @@
 			<Add library="SFML/lib/libsfml-system.a" />
 			<Add directory="SFML/lib" />
 		</Linker>
+		<Unit filename="Disparo.cpp" />
+		<Unit filename="Disparo.h" />
 		<Unit filename="Enemigo.cpp" />
 		<Unit filename="Enemigo.h" />
 		<Unit filename="Personaje.cpp" />

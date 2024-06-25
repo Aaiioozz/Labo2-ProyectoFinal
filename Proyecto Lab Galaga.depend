@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1718239034 source:c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\enemigo.cpp
+1719104494 source:c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\enemigo.cpp
 	"Enemigo.h"
 
-1718238815 c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\enemigo.h
+1719105675 c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\enemigo.h
 	<SFML/Graphics.hpp>
+	"Disparo.h"
 
 1525812018 c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\sfml\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -414,14 +415,23 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1718236063 source:c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\personaje.cpp
+1719105235 source:c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\personaje.cpp
 	"Personaje.h"
 
-1718073582 c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\personaje.h
+1719105112 c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\personaje.h
 	<SFML/Graphics.hpp>
+	"Disparo.h"
 
-1718237789 source:c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\main.cpp
+1719105645 source:c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\main.cpp
 	<SFML/Graphics.hpp>
 	"Personaje.h"
 	"Enemigo.h"
+	<ctime>
+	<cstdlib>
+
+1719105074 source:c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\disparo.cpp
+	"Disparo.h"
+
+1719105074 c:\users\pais gamer\desktop\prog y lab\lab 2\practica 2\archivos\practicas parciales\ejemplo sfml\proyecto lab galaga\disparo.h
+	<SFML/Graphics.hpp>
 
