@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "Colision.h"
 
-class Disparo: public sf::Drawable{
+class Disparo: public sf::Drawable, public Colision{
 sf::Sprite sprite;
 sf::Texture texture;
 float velocity=-10.0f;
@@ -17,5 +17,5 @@ public:
     void setActive(bool active);
     bool IsActive() const;
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
-    sf::FloatRect getBounds() const;
+    sf::FloatRect getBounds() const override;
 };

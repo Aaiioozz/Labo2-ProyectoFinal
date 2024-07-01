@@ -4,6 +4,8 @@
     texture.loadFromFile("avion_galaga.png");
     sprite.setTexture(texture);
     sprite.setPosition(400, 700);
+    VidaT.loadFromFile("avion_vida.png");
+    Vida.setTexture(VidaT);
  }
  void Personaje::update(){
          if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
@@ -48,9 +50,29 @@ void Personaje::Shoot(){
 void Personaje::draw(sf::RenderTarget& target, sf::RenderStates states)const{
  target.draw(sprite, states);
  target.draw(disp, states);
+ for(int i=0; i<vidas;i++){
+sf::Sprite VidaSP=Vida;
+VidaSP.setPosition(10+i*(VidaSP.getGlobalBounds().width+2), 10);
+ target.draw(VidaSP, states);
+ }
 }
 
 sf::FloatRect Personaje::getBounds() const{
     return sprite.getGlobalBounds();
+}
+
+void Personaje::ResetearPosicion(){
+    sprite.setPosition(400, 700);
+    disp.setActive(false);
+}
+
+void Personaje::BajarVida(){
+vidas--;
+ResetearPosicion();
+if(vidas<=0){
+    ///GAME OVER??
+    vidas=3;
+    ResetearPosicion();
+}
 }
 

@@ -15,10 +15,19 @@ using namespace std;
         _jugador.update();
         _enemigo.update();
 
+
+        if(_enemigo.disp.IsActive()&&_enemigo.disp.isCollision(_jugador)){
+        _jugador.BajarVida();
+        _enemigo.disp.setActive(false);
+        }
+        if(_jugador.disp.IsActive()&&_jugador.disp.isCollision(_enemigo)){
+        _enemigo.ResetearPosicion();
+        _jugador.disp.setActive(false);
+        }
         if(_jugador.isCollision(_enemigo)){
-        cout<<"Hay colision"<<endl; // Borrar, esta solo de prueba para comprobar si los objetos colisionaron
-        }else{ cout<<"NO HAY COLISION"<<endl; }
-        /// ADENTRO DEL IF HACER LO QUE OCURRE CUANDO COLISIONAN.
-    }
+        _jugador.BajarVida();
+        _enemigo.ResetearPosicion();
+        }
+        }
 
 

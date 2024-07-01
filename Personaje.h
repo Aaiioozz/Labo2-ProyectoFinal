@@ -7,13 +7,19 @@ class Personaje: public sf::Drawable, public Colision{
 sf::Sprite sprite;
 sf::Texture texture;
 float velocity=5;
-Disparo disp;
+sf::Sprite Vida;
+sf::Texture VidaT;
+int vidas=3;
 
 public:
     Personaje();
     void update();
     void Shoot();
+    Disparo disp;
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
     sf::FloatRect getBounds() const override;
+    void ResetearPosicion();
+    void BajarVida();
+    int getVidas() const;
 };
 

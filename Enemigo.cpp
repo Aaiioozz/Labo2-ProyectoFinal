@@ -7,9 +7,10 @@
     sprite.setPosition(450-sprite.getGlobalBounds().width/2, -sprite.getGlobalBounds().height);
  }
  void Enemigo::update(){
+     //
     if(sprite.getPosition().y<50){
         sprite.move(0, velocity);
-    } else{
+    }else{
         if(sprite.getPosition().x<=0||sprite.getPosition().x+sprite.getGlobalBounds().width>=900){
             velocity=-velocity;
         }
@@ -18,6 +19,7 @@
             Shoot();
         }
     }
+    //
     disp.updateEnemigo();
  }
 
@@ -37,4 +39,8 @@ sf::FloatRect Enemigo::getBounds() const{
     return sprite.getGlobalBounds();
 }
 
-
+void Enemigo::ResetearPosicion(){
+    sprite.setPosition(450-sprite.getGlobalBounds().width/2, -sprite.getGlobalBounds().height);
+    velocity=5.0f;
+    disp.setActive(false);
+}
