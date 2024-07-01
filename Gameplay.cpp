@@ -29,7 +29,6 @@ using namespace std;
         _enemigo.update();
         _powerup.update();
 
-
         if(_enemigo.disp.IsActive()&&_enemigo.disp.isCollision(_jugador)){
         _jugador.BajarVida();
         _enemigo.disp.setActive(false);

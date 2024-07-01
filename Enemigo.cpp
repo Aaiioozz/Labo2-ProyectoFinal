@@ -18,19 +18,18 @@ using namespace std;
         // Direccion del Enemigo Comun
         if(sprite.getPosition().x<=0||sprite.getPosition().x+sprite.getGlobalBounds().width>=900){
             velocity=-velocity;
-
+            // Verifica en que direccion esta false = abajo | true = arriba
             if(!directionChange){
-                if(sprite.getPosition().y<=300){
+                if(sprite.getPosition().y<=300.0f){
                 sprite.move(0,50);
                 }
-                if(sprite.getPosition().y==300){
+                if(sprite.getPosition().y==300.0f){
                     directionChange = true;
-                    cout<<"cambio"<<endl;
                 }
             }
             else{
                     sprite.move(0,-50);
-                    if(sprite.getPosition().y == 100){
+                    if(sprite.getPosition().y == 50.0f){
                     directionChange = false;
                     }
                 }

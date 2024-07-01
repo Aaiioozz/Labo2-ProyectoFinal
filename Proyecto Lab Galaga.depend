@@ -1325,20 +1325,21 @@
 	<SFML/Graphics.hpp>
 	"Colision.h"
 
-1719821688 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.cpp
+1719831581 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.cpp
 	"Enemigo.h"
 	<ctime>
+	<iostream>
 
-1719803354 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.h
+1719831518 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.h
 	<SFML/Graphics.hpp>
 	"Disparo.h"
 	"Colision.h"
 
-1719806109 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\gameplay.cpp
+1719831750 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1719804566 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\gameplay.h
+1719831518 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\gameplay.h
 	<SFML/Graphics.hpp>
 	"Personaje.h"
 	"Enemigo.h"

@@ -18,3 +18,4 @@ public:
     sf::FloatRect getBounds() const override;
     void ResetearPosicion();
 };
+

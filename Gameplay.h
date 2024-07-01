@@ -17,6 +17,7 @@ class Escena: public sf::Drawable{
         Personaje _jugador;
         Enemigo _enemigo;
         PowerUp _powerup;
+
         int Puntos=0;
         sf::Font font;
         sf::Text text;
