@@ -1325,7 +1325,7 @@
 	<SFML/Graphics.hpp>
 	"Colision.h"
 
-1719630564 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.cpp
+1719821688 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.cpp
 	"Enemigo.h"
 	<ctime>
 
@@ -1350,7 +1350,7 @@
 	"Disparo.h"
 	"Colision.h"
 
-1719781753 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\main.cpp
+1719821168 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\main.cpp
 	<SFML/Graphics.hpp>
 	"Gameplay.h"
 	<cstdlib>
