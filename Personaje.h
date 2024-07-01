@@ -4,6 +4,7 @@
 #include "Colision.h"
 
 class Personaje: public sf::Drawable, public Colision{
+private:
 sf::Sprite sprite;
 sf::Texture texture;
 float velocity=5;
@@ -20,6 +21,7 @@ public:
     sf::FloatRect getBounds() const override;
     void ResetearPosicion();
     void BajarVida();
-    int getVidas() const;
+    void setVelocity(float vel){velocity=vel;}
+    float getVelocity()const{return velocity;}
 };
 

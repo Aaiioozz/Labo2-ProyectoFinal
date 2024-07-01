@@ -4,6 +4,7 @@
 #include "Colision.h"
 
 class Enemigo: public sf::Drawable, public Colision{
+private:
 sf::Sprite sprite;
 sf::Texture texture;
 float velocity=5.0f;

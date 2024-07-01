@@ -1321,35 +1321,36 @@
 1719606046 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\disparo.cpp
 	"Disparo.h"
 
-1719606351 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\disparo.h
+1719803354 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\disparo.h
 	<SFML/Graphics.hpp>
 	"Colision.h"
 
-1719790193 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.cpp
+1719630564 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.cpp
 	"Enemigo.h"
 	<ctime>
 
-1719704472 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.h
+1719803354 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\enemigo.h
 	<SFML/Graphics.hpp>
 	"Disparo.h"
 	"Colision.h"
 
-1719722065 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\gameplay.cpp
+1719806109 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1719291594 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\gameplay.h
+1719804566 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\gameplay.h
 	<SFML/Graphics.hpp>
 	"Personaje.h"
 	"Enemigo.h"
 	"Disparo.h"
+	"PowerUp.h"
 
-1719721229 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\personaje.h
+1719805064 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\personaje.h
 	<SFML/Graphics.hpp>
 	"Disparo.h"
 	"Colision.h"
 
-1719291659 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\main.cpp
+1719781753 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\main.cpp
 	<SFML/Graphics.hpp>
 	"Gameplay.h"
 	<cstdlib>
@@ -1777,7 +1778,7 @@
 1719606046 source:c:\users\pais gamer\desktop\labo2-proyectofinal\disparo.cpp
 	"Disparo.h"
 
-1719606351 c:\users\pais gamer\desktop\labo2-proyectofinal\disparo.h
+1719803354 c:\users\pais gamer\desktop\labo2-proyectofinal\disparo.h
 	<SFML/Graphics.hpp>
 	"Colision.h"
 
@@ -1785,33 +1786,48 @@
 	"Enemigo.h"
 	<ctime>
 
-1719704472 c:\users\pais gamer\desktop\labo2-proyectofinal\enemigo.h
+1719803354 c:\users\pais gamer\desktop\labo2-proyectofinal\enemigo.h
 	<SFML/Graphics.hpp>
 	"Disparo.h"
 	"Colision.h"
 
-1719722065 source:c:\users\pais gamer\desktop\labo2-proyectofinal\gameplay.cpp
+1719806109 source:c:\users\pais gamer\desktop\labo2-proyectofinal\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1719291594 c:\users\pais gamer\desktop\labo2-proyectofinal\gameplay.h
+1719804566 c:\users\pais gamer\desktop\labo2-proyectofinal\gameplay.h
 	<SFML/Graphics.hpp>
 	"Personaje.h"
 	"Enemigo.h"
 	"Disparo.h"
+	"PowerUp.h"
 
-1719721229 c:\users\pais gamer\desktop\labo2-proyectofinal\personaje.h
+1719805064 c:\users\pais gamer\desktop\labo2-proyectofinal\personaje.h
 	<SFML/Graphics.hpp>
 	"Disparo.h"
 	"Colision.h"
 
-1719291659 source:c:\users\pais gamer\desktop\labo2-proyectofinal\main.cpp
+1719781753 source:c:\users\pais gamer\desktop\labo2-proyectofinal\main.cpp
 	<SFML/Graphics.hpp>
 	"Gameplay.h"
 	<cstdlib>
 	<ctime>
 	<iostream>
 
-1719722527 source:c:\users\pais gamer\desktop\labo2-proyectofinal\personaje.cpp
+1719722662 source:c:\users\pais gamer\desktop\labo2-proyectofinal\personaje.cpp
 	"Personaje.h"
+
+1719805404 c:\users\pais gamer\desktop\labo2-proyectofinal\powerup.h
+	<SFML/Graphics.hpp>
+	"Colision.h"
+
+1719804672 source:c:\users\pais gamer\desktop\labo2-proyectofinal\powerup.cpp
+	"PowerUp.h"
+
+1719805404 c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\powerup.h
+	<SFML/Graphics.hpp>
+	"Colision.h"
+
+1719804672 source:c:\users\usuario\cosas\proyectos de programación\labo2-proyectofinal\powerup.cpp
+	"PowerUp.h"
 
