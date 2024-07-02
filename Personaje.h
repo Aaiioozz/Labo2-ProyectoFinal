@@ -23,5 +23,6 @@ public:
     void BajarVida();
     void setVelocity(float vel){velocity=vel;}
     float getVelocity()const{return velocity;}
+
 };
 

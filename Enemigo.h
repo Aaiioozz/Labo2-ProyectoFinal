@@ -17,5 +17,23 @@ public:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
     sf::FloatRect getBounds() const override;
     void ResetearPosicion();
+    sf::Vector2f getPosition() const{return sprite.getPosition();}
 };
 
+class EnemigoAvanzado : public sf::Drawable, public Colision{
+
+    public:
+    EnemigoAvanzado();
+    void update();
+    void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    sf::FloatRect getBounds() const override;
+    void ResetearPosicion();
+    Disparo disp;
+    sf::Vector2f getPosition() const{return sprite.getPosition();}
+
+    private:
+    float velocity = 3.0f;
+
+    sf::Sprite sprite;
+    sf::Texture texture;
+};

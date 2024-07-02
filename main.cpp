@@ -11,7 +11,7 @@ int main()
 {
     std::srand(std::time(nullptr));
     ///inicializacion de la ventana
-    sf::RenderWindow window(sf::VideoMode(900, 800), "Prueba de juego");
+    sf::RenderWindow window(sf::VideoMode(1100, 800), "Prueba de juego");
     window.setFramerateLimit(60);
 
     Escena Gameplay;

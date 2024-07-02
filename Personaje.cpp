@@ -29,8 +29,8 @@
         if(sprite.getPosition().y<0){
             sprite.setPosition(sprite.getPosition().x, 0);
         }
-        if(sprite.getPosition().x+sprite.getGlobalBounds().width>900){
-            sprite.setPosition(900-sprite.getGlobalBounds().width, sprite.getPosition().y);
+        if(sprite.getPosition().x+sprite.getGlobalBounds().width>880){
+            sprite.setPosition(880-sprite.getGlobalBounds().width, sprite.getPosition().y);
         }
         if(sprite.getPosition().y+sprite.getGlobalBounds().height>800){
             sprite.setPosition( sprite.getPosition().x, 800-sprite.getGlobalBounds().height);
@@ -52,7 +52,7 @@ void Personaje::draw(sf::RenderTarget& target, sf::RenderStates states)const{
  target.draw(disp, states);
  for(int i=0; i<vidas;i++){
 sf::Sprite VidaSP=Vida;
-VidaSP.setPosition(10+i*(VidaSP.getGlobalBounds().width+2), 10);
+VidaSP.setPosition(895+i*(VidaSP.getGlobalBounds().width+2), 200);
  target.draw(VidaSP, states);
  }
 }
@@ -73,6 +73,7 @@ if(vidas<=0){
     ///GAME OVER??
     vidas=3;
     ResetearPosicion();
+    }
 }
-}
+
 

@@ -15,7 +15,8 @@ using namespace std;
     if(sprite.getPosition().y<50){
         sprite.move(0, velocity);
     } else{
-        // Direccion del Enemigo Comun
+        // Direccion Aleatoria del Enemigo.
+//        if(std::rand() % 2 + 1){}
         if(sprite.getPosition().x<=0||sprite.getPosition().x+sprite.getGlobalBounds().width>=900){
             velocity=-velocity;
             // Verifica en que direccion esta false = abajo | true = arriba
@@ -36,9 +37,8 @@ using namespace std;
             }
 
         }
-
+        sprite.move(velocity, 0); // Movimiento EJE X
         // Probabilidad de Disparo
-        sprite.move(velocity, 0);
         if(std::rand()%100<2){
             Shoot();
         }
@@ -63,5 +63,48 @@ sf::FloatRect Enemigo::getBounds() const{
 void Enemigo::ResetearPosicion(){
     sprite.setPosition(450-sprite.getGlobalBounds().width/2, -sprite.getGlobalBounds().height);
     velocity=5.0f;
+    disp.setActive(false);
+}
+
+// ARRIBA EL ENEMIGO NORMAL
+// ABAJO EMPIEZA EL OTRO ENEMIGO
+
+ EnemigoAvanzado::EnemigoAvanzado(){
+    texture.loadFromFile("enemigoavanzado_galaga.png");
+    sprite.setTexture(texture);
+    sprite.setPosition(450-sprite.getGlobalBounds().width/2, -sprite.getGlobalBounds().height);
+ }
+
+ void EnemigoAvanzado::update(){
+//     COMPORTAMIENTO variado ENEMIGO.
+    if(sprite.getPosition().y<=100.0f){
+        sprite.move(0, velocity);
+    }else{
+        sprite.move(velocity,0);
+         if(sprite.getPosition().x<=200 || sprite.getPosition().x+sprite.getGlobalBounds().width>=700){
+            velocity=-velocity;
+            if(sprite.getPosition().x / 2 >= 4){
+                sprite.move(0,30);
+            }
+
+        }
+
+    }
+
+}
+
+
+
+ void EnemigoAvanzado::draw(sf::RenderTarget& target, sf::RenderStates states)const{
+    target.draw(sprite, states);
+}
+
+sf::FloatRect EnemigoAvanzado::getBounds() const{
+    return sprite.getGlobalBounds();
+}
+
+void EnemigoAvanzado::ResetearPosicion(){
+    sprite.setPosition(450-sprite.getGlobalBounds().width/2, -sprite.getGlobalBounds().height); // De prueba, realmente debe aparecer en la posicion donde fue disparado
+    velocity=8.5f;
     disp.setActive(false);
 }
