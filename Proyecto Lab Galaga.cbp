@@ -36,6 +36,7 @@
 			<Add library="SFML/lib/libsfml-graphics.a" />
 			<Add library="SFML/lib/libsfml-window.a" />
 			<Add library="SFML/lib/libsfml-system.a" />
+			<Add library="SFML/lib/libsfml-audio.a" />
 			<Add directory="SFML/lib" />
 		</Linker>
 		<Unit filename="Colision.cpp" />
@@ -46,10 +47,14 @@
 		<Unit filename="Enemigo.h" />
 		<Unit filename="Gameplay.cpp" />
 		<Unit filename="Gameplay.h" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.h" />
 		<Unit filename="Personaje.cpp" />
 		<Unit filename="Personaje.h" />
 		<Unit filename="PowerUp.cpp" />
 		<Unit filename="PowerUp.h" />
+		<Unit filename="Puntaje.cpp" />
+		<Unit filename="Puntaje.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
